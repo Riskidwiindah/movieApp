@@ -19,7 +19,7 @@ async function getAPIFilm () {
     movieData.forEach((item, index) => {
         cardFilm.innerHTML +=
         `<div class="col">
-            <div class="card m-5" style="width: 18rem;">
+            <div class="card m-5 border-info" style="width: 18rem;">
                 <img src="https://image.tmdb.org/t/p/w500/${item.poster_path}" class="card-img-top" alt="poster film ${item.title}">
                 <div class="card-body">
                     <h5 class="card-title">${item.original_title}</h5>
@@ -43,7 +43,7 @@ async function searchShow (query){
         if (item.poster_path == null){
             cardFilm.innerHTML +=
             `<div class="col">
-                <div class="card m-5" style="width: 18rem;">
+                <div class="card m-5 border-info" style="width: 18rem;">
                     <img src="/pexels-eberhard-grossgasteiger-1287142.jpg" class="card-img-top" alt="poster film ${item.title}">
                     <div class="card-body">
                         <h5 class="card-title">${item.original_title}</h5>
@@ -55,7 +55,7 @@ async function searchShow (query){
         }else{
            cardFilm.innerHTML +=
             `<div class="col">
-                <div class="card m-5" style="width: 18rem;">
+                <div class="card m-5 border-info" style="width: 18rem;">
                     <img src="https://image.tmdb.org/t/p/w500/${item.poster_path}" class="card-img-top" alt="poster film ${item.title}">
                     <div class="card-body">
                         <h5 class="card-title">${item.original_title}</h5>
